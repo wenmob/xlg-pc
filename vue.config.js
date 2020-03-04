@@ -1,3 +1,4 @@
+const proxy = require("./proxy.config");
 module.exports = {
   pluginOptions: {},
   lintOnSave: false,
@@ -5,6 +6,7 @@ module.exports = {
     // host: "0.0.0.0",
     port: "9527",
     open: true,
-    disableHostCheck: true
+    disableHostCheck: true,
+    proxy
   }
 };
