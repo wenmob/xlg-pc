@@ -1,8 +1,12 @@
 import { mapGetters, mapActions } from "vuex";
 import moment from "moment";
+import directives from "./directives";
 export default {
   install(Vue) {
     Vue.mixin({
+      directives: {
+        ...directives
+      },
       computed: {
         ...mapGetters([
           "getItemName",

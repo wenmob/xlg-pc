@@ -6,6 +6,10 @@ import Layout from "@/ReuseComponents/layout";
 
 const drouter = [
   {
+    path: "/",
+    redirect: "/layout"
+  },
+  {
     path: "/layout",
     name: "layout",
     component: Layout,

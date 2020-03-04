@@ -4,7 +4,7 @@ require("@/Tools");
 /**
  * 引入通用样式
  */
-import "@/styles/index.less"; // global css
+import "@/Styles/index.less"; // global css
 /**
  * 引入样式的兼容
  */
@@ -22,12 +22,18 @@ import router from "./permission";
 /**
  * 引入store
  */
-import store from "./store";
+import store from "./Store";
 /**
  * 引入mixins
  */
-import mixins from "@/mixins";
+import mixins from "@/Mixins";
 Vue.use(mixins);
+/**
+ * avue
+ */
+import Avue from "@smallwei/avue";
+import "@smallwei/avue/lib/index.css";
+Vue.use(Avue);
 Vue.config.productionTip = false;
 
 new Vue({

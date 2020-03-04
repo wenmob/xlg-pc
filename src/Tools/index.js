@@ -31,3 +31,16 @@ Object.contrastObj = function(o1, o2) {
   }
   return true;
 };
+
+/**
+ * 过滤数据的方法
+ */
+export function filterObject(obj) {
+  let a = {};
+  for (let key in obj) {
+    if (obj[key] != "") {
+      a[key] = obj[key];
+    }
+  }
+  return a;
+}
